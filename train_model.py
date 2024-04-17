@@ -9,8 +9,8 @@ warnings.simplefilter(action='ignore', category=Warning)
 from statsmodels.tsa.statespace.sarimax import SARIMAX
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 
-train = pd.read_csv(r'data_train.csv', header=None, index_col=0)
-test = pd.read_csv(r'data_test.csv', header=None, index_col=0)
+train = pd.read_csv('data_train.csv', header=None, index_col=0)
+test = pd.read_csv('data_test.csv', header=None, index_col=0)
 
 model = SARIMAX(train,
                 order=(1, 0, 0),

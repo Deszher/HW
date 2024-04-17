@@ -3,7 +3,7 @@ import numpy as np
 
 train_size = 0.7
 
-df = pd.read_csv(r'data_processed.csv', header=0)
+df = pd.read_csv('data_processed.csv', header=0)
 idxs = np.array(df.index)
 
 l = int(len(df) * train_size)

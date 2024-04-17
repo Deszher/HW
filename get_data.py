@@ -16,7 +16,7 @@ class WeatherMaker:
         self.weather_report = []
         self.pages_weather_report = [["date", "temp"]]
         self.html = None
-        self.path = Path(r'data.csv')
+        self.path = Path('data.csv')
         self.url = 'https://yandex.ru/pogoda/month/{self.MONTHS[month]}?lat=56.829472&lon=60.532538&via=ms'
 
     def get_html(self, url):
